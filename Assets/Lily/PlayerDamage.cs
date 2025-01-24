@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDamage : MonoBehaviour
 {
-    public Transform levelStart;
 
     public void PlayerDeath()
     {
