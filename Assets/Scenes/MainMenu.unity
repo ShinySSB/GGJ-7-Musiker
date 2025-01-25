@@ -896,6 +896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d66cf5b0ade4a2b8a0165ecd3f9515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MMC: {fileID: 0}
 --- !u!1 &458242290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d66cf5b0ade4a2b8a0165ecd3f9515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MMC: {fileID: 0}
 --- !u!1 &588248780
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d66cf5b0ade4a2b8a0165ecd3f9515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MMC: {fileID: 0}
 --- !u!1 &961884415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,6 +1790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d66cf5b0ade4a2b8a0165ecd3f9515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MMC: {fileID: 0}
 --- !u!1 &995118507
 GameObject:
   m_ObjectHideFlags: 0
@@ -4235,6 +4239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1426876576}
   - component: {fileID: 1426876575}
+  - component: {fileID: 1426876577}
   m_Layer: 0
   m_Name: Sounds
   m_TagString: Untagged
@@ -4254,8 +4259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b31a2c3d27e88468bc2a762d3664f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundButtonHover: {fileID: 0}
-  soundButtonClick: {fileID: 0}
+  soundButtonHover: {fileID: 11400000, guid: 761883cac1ea3485ab6647fb97f818cf, type: 2}
+  soundButtonClick: {fileID: 11400000, guid: e5d9469160a31400d84a1e79e365e4ee, type: 2}
   useDontDestroyOnLoad: 1
 --- !u!4 &1426876576
 Transform:
@@ -4272,6 +4277,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1426876577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426876574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d735f3e75ea19614b84757e8e6a5c2ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  internals:
+    settings:
+      settingExpandBase: 1
+      settingsExpandAdvanced: 1
+      disablePlayingSounds: 0
+      soundTimeScale: 0
+      globalPause: 0
+      globalVolumeRatio: 1
+      globalVolumeDecibel: 0
+      volumeIncreaseEnable: 0
+      dontDestroyOnLoad: 1
+      debugWarnings: 1
+      debugInPlayMode: 1
+      guiWarnings: 1
+      adressableAudioMixerUse: 0
+      globalSoundTag: {fileID: 0}
+      distanceScale: 1
+      overrideListenerDistance: 0
+      overrideListenerDistanceAmount: 100
+      speedOfSoundEnabled: 0
+      speedOfSoundScale: 1
+      voicePreload: 32
+      voiceLimit: 32
+      voiceStopTime: 5
+      voiceEffectLimit: 32
+    editorTools:
+      editorToolExpand: 1
+      editorToolSelectionHistoryEnable: 0
+      editorToolReferenceFinderEnable: 0
+      editorToolSelectSameTypeEnable: 0
+    debug:
+      debugExpand: 1
+      logSoundEventsEnabled: 0
+      logSoundEventsLogType: 0
+      logSoundEventsSelectObject: 0
+      logSoundEventsPlay: 1
+      logSoundEventsStop: 1
+      logSoundEventsPool: 0
+      logSoundEventsPause: 1
+      logSoundEventsUnpause: 1
+      logSoundEventsGlobalPause: 0
+      logSoundEventsGlobalUnpause: 0
+      logSoundEventsSoundParametersOnce: 1
+      logSoundEventsSoundParametersContinious: 0
+      drawSoundEventsInSceneViewEnabled: 0
+      drawSoundEventsInGameViewEnabled: 0
+      drawSoundEventsHideIfCloserThan: 0.01
+      drawSoundEventsFontSize: 16
+      drawSoundEventsVolumeToOpacity: 0.5
+      drawSoundEventsLifetimeToOpacity: 0.75
+      drawSoundEventsLifetimeFadeLength: 1
+      drawSoundEventsColorStart: {r: 1, g: 0.705, b: 0, a: 1}
+      drawSoundEventsColorEnd: {r: 1, g: 0, b: 0.2550001, a: 1}
+      drawSoundEventsColorOutline: {r: 0, g: 0, b: 0, a: 1}
+    statistics:
+      statisticsExpandBase: 1
+      statisticsExpandInstances: 1
+      statisticsSorting: 0
+      statisticsShowVoices: 1
+      statisticsShowVolume: 1
+      statisticsShowActive: 0
+      statisticsShowDisabled: 0
+      statisticsShowPlays: 0
 --- !u!1 &1472063144
 GameObject:
   m_ObjectHideFlags: 0
@@ -4478,6 +4558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d66cf5b0ade4a2b8a0165ecd3f9515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MMC: {fileID: 0}
 --- !u!1 &1593230179
 GameObject:
   m_ObjectHideFlags: 0
@@ -4909,6 +4990,36 @@ MonoBehaviour:
   musicSlider: {fileID: 1995242299}
   SFXSlider: {fileID: 1975934751}
   initSliderValue: 0.7
+  buttonClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1426876575}
+        m_TargetAssemblyTypeName: SonityTemplate.TemplateSoundPlayUI, TemplateSonity
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  buttonHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1426876575}
+        m_TargetAssemblyTypeName: SonityTemplate.TemplateSoundPlayUI, TemplateSonity
+        m_MethodName: PlayButtonHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1727334683
 Transform:
   m_ObjectHideFlags: 0
@@ -5427,7 +5538,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Babuul Pletfurm Game
+  m_text: Babuul Pletfurm Guum
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
