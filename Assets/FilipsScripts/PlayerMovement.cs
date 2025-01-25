@@ -95,4 +95,11 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = newScale;
         }
     }
+
+    public void DoReset()
+    {
+        transform.localScale = startScale;
+        Rigidbody2D.gravityScale = maxGravity;
+        t = minSize;
+    }
 }
