@@ -30,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 startScale;
     private float t = 0;
 
+    [Space(15),Header("Diver lol")]
+    public SpriteRenderer diver;
+
     private void Awake()
     {
         //For movement
@@ -57,6 +60,8 @@ public class PlayerMovement : MonoBehaviour
         movement *= Time.deltaTime;
         
         transform.Translate(movement);
+        
+        DoFlip(inputX);
     }
     private void DoInflate()
     {
@@ -101,5 +106,13 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = startScale;
         Rigidbody2D.gravityScale = maxGravity;
         t = minSize;
+    }
+
+    private void DoFlip(float x)
+    {
+        if (Math.Abs(x - 1) < double.Epsilon)
+            diver.flipX = false;
+        else if (Math.Abs(x - (-1)) < double.Epsilon)
+            diver.flipX = true;
     }
 }
