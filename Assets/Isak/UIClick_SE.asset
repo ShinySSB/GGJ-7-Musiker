@@ -22,8 +22,8 @@ MonoBehaviour:
       expandAllSoundTag: 0
       timelineSoundContainerData:
       - delay: 0
-        volumeRatio: 0.691831
-        volumeDecibel: -3.2
+        volumeRatio: 1
+        volumeDecibel: 0
       foundReferences: []
       disableEnable: 0
       muteEnable: 0
