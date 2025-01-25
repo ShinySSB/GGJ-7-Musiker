@@ -10,30 +10,30 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D Rigidbody2D;
     
+    [Header("Character Controlls")]
+    
     public float movementSpeed;
     private Vector2 speed = new Vector2(0, 0);
-
+    
     [SerializeField] private float maxGravity, minGravity, timeToGrow, timeToShrink;
     private float gravity;
+    
+    [Space (15)]
+    [Header("Max and min y value")]
+    [SerializeField] private float maxSize;
+
+    [SerializeField] private float minSize;
 
     private void Awake()
     {
         TryGetComponent(out Rigidbody2D);
         speed.x = movementSpeed;
-        //speed.y = movementSpeed;
     }
 
     void FixedUpdate()
     {
-        if (Input.GetAxis("Horizontal") == 0 || Input.GetAxis("Vertical") == 0)
-        {
-            return;
-        }
-        else
-        {
-            DoSidewaysMovement();
-            DoInflate();
-        }
+        DoSidewaysMovement();
+        DoInflate();
     }
 
     private void DoSidewaysMovement()
@@ -54,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
         {
             //Go up
             Rigidbody2D.gravityScale -= (Time.deltaTime * timeToGrow);
+            DoSizeChange(inputY);
         }
         else if (inputY == -1 && Rigidbody2D.gravityScale <= maxGravity)
         {
@@ -61,6 +62,18 @@ public class PlayerMovement : MonoBehaviour
             Rigidbody2D.gravityScale += (Time.deltaTime * timeToShrink);
         }
     }
-    
-    
+
+    private void DoSizeChange(float input)
+    {
+        Vector3 vMax = new Vector3(Time.deltaTime * maxSize, Time.deltaTime * maxSize,0);
+        Vector3 vMin = new Vector3(Time.deltaTime * minSize, Time.deltaTime * minSize,0);
+        if (input == 1)
+        {
+            gameObject.transform.localScale += vMax;
+        }
+        else if (input == -1)
+        {
+            gameObject.transform.localScale -= vMin;
+        }
+    }
 }
