@@ -40,10 +40,7 @@ public class FishBehavior : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            print("Triggered");
             other.GetComponent<PlayerDamage>().PlayerDeath();
-            return;
         }
-        print("Didn't trigger.");
     }
 }

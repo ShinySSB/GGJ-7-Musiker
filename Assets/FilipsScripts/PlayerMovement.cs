@@ -10,32 +10,28 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D Rigidbody2D;
     
+    [Header("Character Controlls")]
+    
     public float movementSpeed;
     private Vector2 speed = new Vector2(0, 0);
-
-    [SerializeField] private float maxGravity, minGravity, timeToInflate;
+    
+    [SerializeField] private float maxGravity, minGravity, timeToGrow, timeToShrink;
     private float gravity;
-    [SerializeField] private float logBase;
+    
+    [Space (15)]
+    [Header("Max and min y value")]
+    [SerializeField] private float maxSize;
+
+    [SerializeField] private float minSize;
 
     private void Awake()
     {
         TryGetComponent(out Rigidbody2D);
         speed.x = movementSpeed;
-        speed.y = movementSpeed;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        /*if (Input.GetAxis("Horizontal") == 0 || Input.GetAxis("Vertical") == 0)
-        {
-            return;
-        }
-        else
-        {
-            DoSidewaysMovement();
-            DoInflate();
-        }
-        */
         DoSidewaysMovement();
         DoInflate();
     }
@@ -57,16 +53,27 @@ public class PlayerMovement : MonoBehaviour
         if (inputY == 1 && Rigidbody2D.gravityScale >= minGravity)
         {
             //Go up
-            Rigidbody2D.gravityScale -= (Time.deltaTime * timeToInflate);
+            Rigidbody2D.gravityScale -= (Time.deltaTime * timeToGrow);
+            DoSizeChange(inputY);
         }
         else if (inputY == -1 && Rigidbody2D.gravityScale <= maxGravity)
         {
             //Go down
-            /*gravity -= Mathf.Log((Time.deltaTime * timeToInflate), logBase).ConvertTo<float>();
-            Debug.Log(gravity);
-            float var = Mathf.Clamp(gravity, minGravity, maxGravity);
-            Rigidbody2D.gravityScale = var;*/
-            Rigidbody2D.gravityScale += (Time.deltaTime * timeToInflate);
+            Rigidbody2D.gravityScale += (Time.deltaTime * timeToShrink);
+        }
+    }
+
+    private void DoSizeChange(float input)
+    {
+        Vector3 vMax = new Vector3(Time.deltaTime * maxSize, Time.deltaTime * maxSize,0);
+        Vector3 vMin = new Vector3(Time.deltaTime * minSize, Time.deltaTime * minSize,0);
+        if (input == 1)
+        {
+            gameObject.transform.localScale += vMax;
+        }
+        else if (input == -1)
+        {
+            gameObject.transform.localScale -= vMin;
         }
     }
 }
