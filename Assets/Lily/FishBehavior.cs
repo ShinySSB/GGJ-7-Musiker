@@ -12,10 +12,13 @@ public class FishBehavior : MonoBehaviour
     private Transform current;
     private Transform target;
     private float t;
+    private SpriteRenderer sprite;
     
     // Start is called before the first frame update
     void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
+        sprite.flipX = true;
         target = b;
         transform.position = a.position;
     }
@@ -32,6 +35,7 @@ public class FishBehavior : MonoBehaviour
         if (t >= 1f)
         {
             (a, b) = (b, a);
+            sprite.flipX = !sprite.flipX;
             t = 0f;
         }
     }
