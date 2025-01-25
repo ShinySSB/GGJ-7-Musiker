@@ -174,6 +174,7 @@ MonoBehaviour:
   maxSize: 2.4
   minSize: 0
   changeDuration: 2
+  diver: {fileID: 0}
 --- !u!95 &8030698646379093018
 Animator:
   serializedVersion: 5
@@ -372,4 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0034d824d44c2340a254da0ac89b49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockY: 1
+  lockX: 0
   yLockedValue: 0
+  xLockedValue: 0
