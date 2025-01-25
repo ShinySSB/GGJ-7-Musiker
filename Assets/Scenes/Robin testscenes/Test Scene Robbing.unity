@@ -451,8 +451,8 @@ MonoBehaviour:
   OnEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LoadingSceneManager, Assembly-CSharp
+      - m_Target: {fileID: 439687377}
+        m_TargetAssemblyTypeName: NextSceneManager, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
