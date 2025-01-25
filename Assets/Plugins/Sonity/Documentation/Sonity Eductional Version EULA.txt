@@ -1,0 +1,35 @@
+Sonity Educational Version End User License Agreement
+
+Legal information relating to Sonity Educational Version. 
+Please note that this information may be updated without further notice. 
+Last edited 2024-11-28.
+This End User License Agreement (EULA) is a legal agreement between you Sonigon AB (us or we) 
+and governs your use of the Sonity Educational Version (the Software).
+
+1. Grant of License
+This EULA grants you the right to use Sonity Educational Version (the Software) 
+for educational purposes only, subject to the following:
+i. The Software is used for non-commercial educational use only, not used for any other purpose.
+ii. For any other use except educational use of the Software e.g. commercial, personal, evaluation etc. 
+you are obliged to buy the full version of Sonity which has its own EULA.
+iii. The Software is not distributed as part of a game engine, tool set or asset package.
+iv.	The Software is not redistributed in any form except by written permission by Sonigon. 
+If such a permission is given, it may only be redistributed by the teachers of the school 
+to the students of the school for the purpose of educational use.
+v.	The Software is not to be decompiled, changed or tampered with in any way.
+
+4. Intellectual Property Rights
+We are and remain at all times the owner of the Software (including all intellectual property rights in or to the Software). 
+For the avoidance of doubt, nothing in this EULA may be deemed to grant or assign to you any proprietary or ownership interest 
+or intellectual property rights in or to the Software other than the rights licensed according to Clause 1.
+You acknowledge and agree that you have no right, title or interest in and to the intellectual property rights in the Software.
+
+5. Security and Risk
+You are responsible for protecting the Software and any related materials at all times from unauthorised access, use or damage.
+
+6. Warranty and limitation of liability
+The Software is provided by us “as is” and, to the maximum extent permitted by law, any express or implied warranties of any kind, 
+including (but not limited to) all implied warranties of merchantability and fitness for a particular purpose are disclaimed.
+In no event shall we (and our employees, contractors and subcontractors), developers and contributors be liable for any direct, 
+special, indirect or consequential damages whatsoever resulting from loss of data or profits, whether in an action of contract, 
+negligence or other tortious conduct, arising out of or in connection with the use or performance of the Software.
