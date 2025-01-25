@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 public class PlayerDamage : MonoBehaviour
 {
     public UnityEvent onPlayerDeath;
-    public void PlayerDeath()
+    public IEnumerator PlayerDeath()
     {
         onPlayerDeath.Invoke();
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadSceneAsync(currentSceneName);
+        Vector3 respawnPos = GetComponent<CheckpointTracker>().GetCheckpoint();
+        gameObject.transform.position = respawnPos;
+        yield return null;
     }
 }
