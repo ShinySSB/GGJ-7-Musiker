@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (inputY == 1)
         {
-            t += (Time.deltaTime * timeToGrow) / changeDuration;
+            t += Time.deltaTime/ changeDuration;
             t = Mathf.Clamp(t, minSize, maxSize - 1);
             Debug.Log(t);
             Vector3 newScale = Vector3.Lerp(startScale, targetScale, t);
@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (inputY == -1)
         {
-            t -= (Time.deltaTime * timeToShrink)/ changeDuration;
+            t -= Time.deltaTime * 10 / changeDuration;
             t = Mathf.Clamp(t, minSize, maxSize - 1);
             Debug.Log(t);
             Vector3 newScale = Vector3.Lerp(startScale, targetScale, t);
