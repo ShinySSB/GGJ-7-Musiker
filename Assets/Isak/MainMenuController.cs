@@ -77,19 +77,4 @@ public class MainMenuController : MonoBehaviour
         Debug.Log("clickSound");
         buttonClick.Invoke();
     }
-
-    public void level1(int index)
-    {
-        SceneManager.LoadScene(index);
-    }
-    public void level2(int index)
-    {
-        SceneManager.LoadScene(index);
-    }
-
-    public void level3(int index)
-    {
-        SceneManager.LoadScene(index);
-    }
-
 }
