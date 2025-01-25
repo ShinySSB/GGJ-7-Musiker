@@ -9805,6 +9805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 2
   direction: 1
+  pushY: 1
 --- !u!1 &8568416194742436726
 GameObject:
   m_ObjectHideFlags: 0
