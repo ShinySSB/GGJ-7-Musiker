@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -23,17 +24,28 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float maxSize;
 
     [SerializeField] private float minSize;
+    
+    public float changeDuration = 5f;
+    private Vector3 targetScale;
+    private Vector3 startScale;
+    private float t = 0;
 
     private void Awake()
     {
+        //For movement
         TryGetComponent(out Rigidbody2D);
         speed.x = movementSpeed;
+        //For size change
+        startScale = transform.localScale;
+        targetScale = Vector3.one * maxSize;
+        t = 0;
     }
 
     void FixedUpdate()
     {
         DoSidewaysMovement();
         DoInflate();
+        DoSizeChange();
     }
 
     private void DoSidewaysMovement()
@@ -54,7 +66,6 @@ public class PlayerMovement : MonoBehaviour
         {
             //Go up
             Rigidbody2D.gravityScale -= (Time.deltaTime * timeToGrow);
-            DoSizeChange(inputY);
         }
         else if (inputY == -1 && Rigidbody2D.gravityScale <= maxGravity)
         {
@@ -63,17 +74,25 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void DoSizeChange(float input)
+    private void DoSizeChange()
     {
-        Vector3 vMax = new Vector3(Time.deltaTime * maxSize, Time.deltaTime * maxSize,0);
-        Vector3 vMin = new Vector3(Time.deltaTime * minSize, Time.deltaTime * minSize,0);
-        if (input == 1)
+        float inputY = Input.GetAxis("Vertical");
+
+        if (inputY == 1)
         {
-            gameObject.transform.localScale += vMax;
+            t += (Time.deltaTime * timeToGrow) / changeDuration;
+            t = Mathf.Clamp(t, minSize, maxSize - 1);
+            Debug.Log(t);
+            Vector3 newScale = Vector3.Lerp(startScale, targetScale, t);
+            transform.localScale = newScale;
         }
-        else if (input == -1)
+        else if (inputY == -1)
         {
-            gameObject.transform.localScale -= vMin;
+            t -= (Time.deltaTime * timeToShrink)/ changeDuration;
+            t = Mathf.Clamp(t, minSize, maxSize - 1);
+            Debug.Log(t);
+            Vector3 newScale = Vector3.Lerp(startScale, targetScale, t);
+            transform.localScale = newScale;
         }
     }
 }
