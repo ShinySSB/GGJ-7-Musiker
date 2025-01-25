@@ -7,13 +7,13 @@ public class BubblePush : MonoBehaviour
 {
     [SerializeField] private float force, direction;
     
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.CompareTag("Player"))
         {
             Debug.Log("Hej");
             
-            Vector2 movement = new Vector2(force * direction,0);
+            Vector3 movement = new Vector3(force * direction,0);
 
             movement *= Time.deltaTime;
         
