@@ -13,20 +13,19 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed;
     private Vector2 speed = new Vector2(0, 0);
 
-    [SerializeField] private float maxGravity, minGravity, timeToInflate;
+    [SerializeField] private float maxGravity, minGravity, timeToGrow, timeToShrink;
     private float gravity;
-    [SerializeField] private float logBase;
 
     private void Awake()
     {
         TryGetComponent(out Rigidbody2D);
         speed.x = movementSpeed;
-        speed.y = movementSpeed;
+        //speed.y = movementSpeed;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        /*if (Input.GetAxis("Horizontal") == 0 || Input.GetAxis("Vertical") == 0)
+        if (Input.GetAxis("Horizontal") == 0 || Input.GetAxis("Vertical") == 0)
         {
             return;
         }
@@ -35,9 +34,6 @@ public class PlayerMovement : MonoBehaviour
             DoSidewaysMovement();
             DoInflate();
         }
-        */
-        DoSidewaysMovement();
-        DoInflate();
     }
 
     private void DoSidewaysMovement()
@@ -57,16 +53,14 @@ public class PlayerMovement : MonoBehaviour
         if (inputY == 1 && Rigidbody2D.gravityScale >= minGravity)
         {
             //Go up
-            Rigidbody2D.gravityScale -= (Time.deltaTime * timeToInflate);
+            Rigidbody2D.gravityScale -= (Time.deltaTime * timeToGrow);
         }
         else if (inputY == -1 && Rigidbody2D.gravityScale <= maxGravity)
         {
             //Go down
-            /*gravity -= Mathf.Log((Time.deltaTime * timeToInflate), logBase).ConvertTo<float>();
-            Debug.Log(gravity);
-            float var = Mathf.Clamp(gravity, minGravity, maxGravity);
-            Rigidbody2D.gravityScale = var;*/
-            Rigidbody2D.gravityScale += (Time.deltaTime * timeToInflate);
+            Rigidbody2D.gravityScale += (Time.deltaTime * timeToShrink);
         }
     }
+    
+    
 }
