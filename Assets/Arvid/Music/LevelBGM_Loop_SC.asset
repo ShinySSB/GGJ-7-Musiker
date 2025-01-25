@@ -22,14 +22,14 @@ MonoBehaviour:
       audioMixerGroup: {fileID: 0}
       settingsExpandBase: 1
       settingsExpandAdvanced: 0
-      priority: 0.5
+      priority: 1
       distanceEnabled: 1
       distanceScale: 100
       preventEndClicks: 1
       loopEnabled: 1
-      followPosition: 1
+      followPosition: 0
       stopIfTransformIsNull: 1
-      randomStartPosition: 1
+      randomStartPosition: 0
       randomStartPositionMin: 0
       randomStartPositionMax: 1
       startPosition: 0
@@ -39,14 +39,14 @@ MonoBehaviour:
       lockAxisEnable: 0
       lockAxis: 2
       lockAxisPosition: 0
-      playOrder: 0
+      playOrder: 1
       dopplerAmount: 0
       bypassReverbZones: 0
       bypassVoiceEffects: 0
       bypassListenerEffects: 0
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
-      volumeExpand: 0
+      volumeExpand: 1
       volumeDecibel: 0
       volumeRatio: 1
       volumeRandomEnable: 0
@@ -163,10 +163,10 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      pitchExpand: 0
+      pitchExpand: 1
       pitchSemitone: 0
       pitchRatio: 1
-      pitchRandomEnable: 1
+      pitchRandomEnable: 0
       pitchRandomRangeSemitoneBipolar: 0.25
       pitchIntensityEnable: 0
       pitchIntensityLowSemitone: -12
@@ -202,8 +202,8 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      spatialBlendExpand: 0
-      spatialBlend: 1
+      spatialBlendExpand: 1
+      spatialBlend: 0
       spatialBlendDistanceRolloff: -4
       spatialBlendDistance3DIncrease: 0.5
       spatialBlendDistanceCurve:
@@ -257,9 +257,9 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      spatialSpreadExpand: 0
-      spatialSpreadDegrees: 180
-      spatialSpreadRatio: 0.5
+      spatialSpreadExpand: 1
+      spatialSpreadDegrees: 0
+      spatialSpreadRatio: 0
       spatialSpreadDistanceRolloff: -4
       spatialSpreadDistanceCurve:
         serializedVersion: 2
@@ -312,14 +312,14 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      stereoPanExpand: 0
+      stereoPanExpand: 1
       stereoPanOffset: 0
       stereoPanAngleUse: 0
       stereoPanAngleAmount: 0.75
       stereoPanAngleRolloff: -2
       reverbZoneMixExpand: 0
-      reverbZoneMixDecibel: 0
-      reverbZoneMixRatio: 1
+      reverbZoneMixDecibel: -Infinity
+      reverbZoneMixRatio: 0
       reverbZoneMixDistanceIncrease: 0.5
       reverbZoneMixDistanceRolloff: -2
       reverbZoneMixDistanceCurve:
@@ -375,7 +375,7 @@ MonoBehaviour:
         m_RotationOrder: 4
       distortionExpand: 0
       distortionEnabled: 0
-      distortionAmount: 0.25
+      distortionAmount: 0.483
       distortionDistanceEnable: 0
       distortionDistanceRolloff: -4
       distortionDistanceCurve:
@@ -433,8 +433,8 @@ MonoBehaviour:
       lowpassEnabled: 0
       lowpassFrequencyEditor: 20000
       lowpassFrequencyEngine: 1
-      lowpassAmountEditor: 6
-      lowpassAmountEngine: 1
+      lowpassAmountEditor: 5.98
+      lowpassAmountEngine: 0.99666667
       lowpassDistanceEnable: 0
       lowpassDistanceFrequencyRolloff: -2
       lowpassDistanceFrequencyCurve:

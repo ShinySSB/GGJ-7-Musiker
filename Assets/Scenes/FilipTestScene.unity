@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 845121576}
   - component: {fileID: 845121577}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -324,8 +324,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.04, y: -2.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.51, y: 1.51, z: 1.51}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -381,6 +381,9 @@ MonoBehaviour:
   minGravity: -0.6
   timeToGrow: 3
   timeToShrink: 10
+  maxSize: 2.4
+  minSize: 0
+  changeDuration: 2
 --- !u!95 &845121577
 Animator:
   serializedVersion: 5
