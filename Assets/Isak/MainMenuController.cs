@@ -5,11 +5,25 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
+using UnityEngine.UI;
+using TMPro;
+using Slider = UnityEngine.UI.Slider;
 
 
 public class MainMenuController : MonoBehaviour
 {
+    
     public UnityEvent settings, back;
+    public TMP_Text musicText, sfxText;
+    public Slider musicSlider, SFXSlider;
+    [Range(0f, 1f)]
+    public float initSliderValue;
+
+    private void Start()
+    {
+        musicSlider.value = initSliderValue;
+        SFXSlider.value = initSliderValue;
+    }
 
     public void Play()
     {
@@ -34,4 +48,16 @@ public class MainMenuController : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
+
+    public void musicSliderChange()
+    {
+        musicText.text = musicSlider.value.ToString("F2"); 
+    }
+
+    public void sfxSliderChange()
+    {
+        sfxText.text = SFXSlider.value.ToString("F2"); 
+    }
+    
+    
 }
