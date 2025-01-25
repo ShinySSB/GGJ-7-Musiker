@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Sharktooth down
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 65e23554108ff9049b50e09d5897bef4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d656018915b3c2d4db68f5b6bf7af34e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
