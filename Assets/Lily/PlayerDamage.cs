@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,21 +9,29 @@ public class PlayerDamage : MonoBehaviour
 {
     public UnityEvent onPlayerDeath;
     public float waitTime;
+    private Vector3 defaultrespawnPos;
+    void Start()
+    {
+        defaultrespawnPos = gameObject.transform.position;
+    }
+    
     public void PlayerDeath()
     {
         onPlayerDeath.Invoke();
-        StartCoroutine(RespawnPlayer());
     }
 
-    public IEnumerator RespawnPlayer()
+    public void RespawnPlayer()
     {
-        yield return new WaitForSeconds(waitTime);
-        Vector3 respawnPos = GetComponent<CheckpointTracker>().GetCheckpoint();
-        /*if (respawnPos. == null)
+        Vector3 respawnPos;
+        try
         {
-            
-        }*/
-
+            respawnPos = GetComponent<CheckpointTracker>().GetCheckpoint();
+        }
+        catch (NullReferenceException)
+        {
+            respawnPos = defaultrespawnPos;
+        }
+        
         gameObject.transform.position = respawnPos;
     }
 }
