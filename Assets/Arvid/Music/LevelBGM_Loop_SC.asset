@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e444e5f947e2a7409a1eaa10f9fa16e, type: 3}
-  m_Name: Example_MUS_Stem_A_Intensity_High_SC
+  m_Name: LevelBGM_Loop_SC
   m_EditorClassIdentifier: 
   internals:
     data:
@@ -22,19 +22,19 @@ MonoBehaviour:
       audioMixerGroup: {fileID: 0}
       settingsExpandBase: 1
       settingsExpandAdvanced: 0
-      priority: 1
-      distanceEnabled: 0
+      priority: 0.5
+      distanceEnabled: 1
       distanceScale: 100
       preventEndClicks: 1
-      loopEnabled: 0
-      followPosition: 0
-      stopIfTransformIsNull: 0
-      randomStartPosition: 0
+      loopEnabled: 1
+      followPosition: 1
+      stopIfTransformIsNull: 1
+      randomStartPosition: 1
       randomStartPositionMin: 0
       randomStartPositionMax: 1
       startPosition: 0
-      neverStealVoice: 1
-      neverStealVoiceEffects: 1
+      neverStealVoice: 0
+      neverStealVoiceEffects: 0
       reverse: 0
       lockAxisEnable: 0
       lockAxis: 2
@@ -46,9 +46,9 @@ MonoBehaviour:
       bypassListenerEffects: 0
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
-      volumeExpand: 1
-      volumeDecibel: -6
-      volumeRatio: 0.5011872
+      volumeExpand: 0
+      volumeDecibel: 0
+      volumeRatio: 1
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
       volumeDistanceRolloff: -2
@@ -76,9 +76,9 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      volumeIntensityEnable: 1
+      volumeIntensityEnable: 0
       volumeIntensityRolloff: 2
-      volumeIntensityStrength: 0
+      volumeIntensityStrength: 1
       volumeIntensityCurve:
         serializedVersion: 2
         m_Curve:
@@ -133,12 +133,12 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      volumeIntensityCrossfadeEnable: 1
+      volumeIntensityCrossfadeEnable: 0
       volumeIntensityCrossfadeTotalLayersOneBased: 2
       volumeIntensityCrossfadeTotalLayers: 1
-      volumeIntensityCrossfadeLayerOneBased: 2
-      volumeIntensityCrossfadeLayer: 1
-      volumeIntensityCrossfadeRolloff: 0
+      volumeIntensityCrossfadeLayerOneBased: 1
+      volumeIntensityCrossfadeLayer: 0
+      volumeIntensityCrossfadeRolloff: 2
       volumeIntensityCrossfadeCurve:
         serializedVersion: 2
         m_Curve:
@@ -166,7 +166,7 @@ MonoBehaviour:
       pitchExpand: 0
       pitchSemitone: 0
       pitchRatio: 1
-      pitchRandomEnable: 0
+      pitchRandomEnable: 1
       pitchRandomRangeSemitoneBipolar: 0.25
       pitchIntensityEnable: 0
       pitchIntensityLowSemitone: -12
@@ -202,8 +202,8 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      spatialBlendExpand: 1
-      spatialBlend: 0
+      spatialBlendExpand: 0
+      spatialBlend: 1
       spatialBlendDistanceRolloff: -4
       spatialBlendDistance3DIncrease: 0.5
       spatialBlendDistanceCurve:
@@ -650,7 +650,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     audioClips:
-    - {fileID: 8300000, guid: da2d51514d03a1a49bb364888155867a, type: 3}
+    - {fileID: 8300000, guid: c3ad41a1aa623fa4a8499f0c1e63d2f4, type: 3}
     notes: Notes
   assetGuid: 
   assetGuidHash: 0
