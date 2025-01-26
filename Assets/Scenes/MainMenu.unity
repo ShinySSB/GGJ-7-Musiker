@@ -6997,6 +6997,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingScene
       objectReference: {fileID: 0}
+    - target: {fileID: 3553365481269472203, guid: c35e4282d9c7b4244858b3f77c3a165d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600386347476827391, guid: c35e4282d9c7b4244858b3f77c3a165d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691665970930370731, guid: c35e4282d9c7b4244858b3f77c3a165d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8396212176774190199, guid: c35e4282d9c7b4244858b3f77c3a165d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
