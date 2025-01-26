@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e444e5f947e2a7409a1eaa10f9fa16e, type: 3}
-  m_Name: Example_SFX_Bow_Shoot_SC
+  m_Name: big boom SC
   m_EditorClassIdentifier: 
   internals:
     data:
@@ -46,7 +46,7 @@ MonoBehaviour:
       bypassListenerEffects: 0
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
-      volumeExpand: 1
+      volumeExpand: 0
       volumeDecibel: 0
       volumeRatio: 1
       volumeRandomEnable: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      pitchExpand: 0
+      pitchExpand: 1
       pitchSemitone: 0
       pitchRatio: 1
       pitchRandomEnable: 1
@@ -429,10 +429,10 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      lowpassExpand: 0
-      lowpassEnabled: 0
-      lowpassFrequencyEditor: 20000
-      lowpassFrequencyEngine: 1
+      lowpassExpand: 1
+      lowpassEnabled: 1
+      lowpassFrequencyEditor: 6065
+      lowpassFrequencyEngine: 0.30255255
       lowpassAmountEditor: 6
       lowpassAmountEngine: 1
       lowpassDistanceEnable: 0
@@ -650,10 +650,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     audioClips:
-    - {fileID: 8300000, guid: 15951377229498440a6f2e550c9447f6, type: 3}
-    - {fileID: 8300000, guid: 2f0ef5a7ae2ba584b8e6f757e522e692, type: 3}
-    - {fileID: 8300000, guid: 53c4dd8db2dba3044bff915b9b7b6561, type: 3}
-    - {fileID: 8300000, guid: 598081fd9f93d9146b9e0e8894d9a980, type: 3}
+    - {fileID: 8300000, guid: 234bbc83fcf9be74bab144e3738c3aeb, type: 3}
     notes: Notes
   assetGuid: 
   assetGuidHash: 0

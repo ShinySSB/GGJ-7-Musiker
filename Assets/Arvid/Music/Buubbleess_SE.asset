@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b80e83c0feb1444db6d74f0748b6ec9, type: 3}
-  m_Name: Example_SFX_Bow_Shoot_SE
+  m_Name: Buubbleess_SE
   m_EditorClassIdentifier: 
   internals:
     notes: Notes
@@ -19,7 +19,7 @@ MonoBehaviour:
       expandSoundContainers: 1
       expandTimeline: 1
       expandPreview: 0
-      expandAllSoundTag: 0
+      expandAllSoundTag: 1
       timelineSoundContainerData:
       - delay: 0
         volumeRatio: 1
@@ -28,7 +28,7 @@ MonoBehaviour:
       disableEnable: 0
       muteEnable: 0
       soloEnable: 0
-      debugExpand: 0
+      debugExpand: 1
       debugLogShow: 0
       debugDrawShow: 0
       debugDrawSoundEventStyleOverride: 0
@@ -135,10 +135,9 @@ MonoBehaviour:
       intensityDebugResolution: 100
       intensityDebugZoom: 0.9
       intensityDebugValueList: []
-      triggerOnExpand: 0
-      triggerOnPlayEnable: 0
-      triggerOnPlaySoundEvents:
-      - {fileID: 0}
+      triggerOnExpand: 1
+      triggerOnPlayEnable: 1
+      triggerOnPlaySoundEvents: []
       triggerOnPlayWhichToPlay: 0
       triggerOnStopEnable: 0
       triggerOnStopSoundEvents:
@@ -148,7 +147,7 @@ MonoBehaviour:
       triggerOnTailSoundEvents:
       - {fileID: 0}
       triggerOnTailWhichToPlay: 0
-      triggerOnTailLength: 2
+      triggerOnTailLength: 0
       triggerOnTailBpm: 120
       triggerOnTailBeatLength: 2
       soundTagEnable: 0
@@ -246,6 +245,6 @@ MonoBehaviour:
         soundEvent:
         - {fileID: 0}
     soundContainers:
-    - {fileID: 11400000, guid: d172e4a3441b99c47aff521767dd8cf1, type: 2}
+    - {fileID: 11400000, guid: 3aac8ba8ed97c64499c64f9d57b6d59f, type: 2}
   assetGuid: 
   assetGuidHash: 0

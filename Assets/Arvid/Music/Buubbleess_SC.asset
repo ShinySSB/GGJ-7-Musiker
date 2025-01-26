@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e444e5f947e2a7409a1eaa10f9fa16e, type: 3}
-  m_Name: Example_SFX_Bow_Shoot_SC
+  m_Name: Buubbleess_SC
   m_EditorClassIdentifier: 
   internals:
     data:
       foundReferences: []
-      previewAudioMixerGroup: {fileID: 0}
-      expandPreview: 0
+      previewAudioMixerGroup: {fileID: -6159010822118239673, guid: 731a8227e9267394686f82f3cb6e3be9, type: 2}
+      expandPreview: 1
       expandAudioClips: 1
       previewCurves: 1
       audioMixerGroup: {fileID: 0}
       settingsExpandBase: 1
-      settingsExpandAdvanced: 0
-      priority: 0.5
-      distanceEnabled: 1
+      settingsExpandAdvanced: 1
+      priority: 1
+      distanceEnabled: 0
       distanceScale: 100
       preventEndClicks: 1
-      loopEnabled: 0
-      followPosition: 0
-      stopIfTransformIsNull: 0
+      loopEnabled: 1
+      followPosition: 1
+      stopIfTransformIsNull: 1
       randomStartPosition: 0
       randomStartPositionMin: 0
       randomStartPositionMax: 1
@@ -163,10 +163,10 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      pitchExpand: 0
+      pitchExpand: 1
       pitchSemitone: 0
       pitchRatio: 1
-      pitchRandomEnable: 1
+      pitchRandomEnable: 0
       pitchRandomRangeSemitoneBipolar: 0.25
       pitchIntensityEnable: 0
       pitchIntensityLowSemitone: -12
@@ -203,7 +203,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       spatialBlendExpand: 0
-      spatialBlend: 1
+      spatialBlend: 0
       spatialBlendDistanceRolloff: -4
       spatialBlendDistance3DIncrease: 0.5
       spatialBlendDistanceCurve:
@@ -258,8 +258,8 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       spatialSpreadExpand: 0
-      spatialSpreadDegrees: 180
-      spatialSpreadRatio: 0.5
+      spatialSpreadDegrees: 0
+      spatialSpreadRatio: 0
       spatialSpreadDistanceRolloff: -4
       spatialSpreadDistanceCurve:
         serializedVersion: 2
@@ -650,10 +650,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     audioClips:
-    - {fileID: 8300000, guid: 15951377229498440a6f2e550c9447f6, type: 3}
-    - {fileID: 8300000, guid: 2f0ef5a7ae2ba584b8e6f757e522e692, type: 3}
-    - {fileID: 8300000, guid: 53c4dd8db2dba3044bff915b9b7b6561, type: 3}
-    - {fileID: 8300000, guid: 598081fd9f93d9146b9e0e8894d9a980, type: 3}
+    - {fileID: 8300000, guid: fd6d10c4f4d0d9847bb392bb0b995809, type: 3}
     notes: Notes
   assetGuid: 
   assetGuidHash: 0
