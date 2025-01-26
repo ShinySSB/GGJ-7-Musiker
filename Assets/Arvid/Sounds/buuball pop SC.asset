@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e444e5f947e2a7409a1eaa10f9fa16e, type: 3}
-  m_Name: big boom SC
+  m_Name: buuball pop SC
   m_EditorClassIdentifier: 
   internals:
     data:
@@ -47,8 +47,8 @@ MonoBehaviour:
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
       volumeExpand: 1
-      volumeDecibel: -25.1
-      volumeRatio: 0.05559043
+      volumeDecibel: 0
+      volumeRatio: 1
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
       volumeDistanceRolloff: -2
@@ -164,10 +164,10 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       pitchExpand: 1
-      pitchSemitone: 0
-      pitchRatio: 1
+      pitchSemitone: 1.9
+      pitchRatio: 1.1159972
       pitchRandomEnable: 1
-      pitchRandomRangeSemitoneBipolar: 0.25
+      pitchRandomRangeSemitoneBipolar: 0.7
       pitchIntensityEnable: 0
       pitchIntensityLowSemitone: -12
       pitchIntensityLowRatio: 0.5
@@ -429,10 +429,10 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      lowpassExpand: 1
-      lowpassEnabled: 1
-      lowpassFrequencyEditor: 11108
-      lowpassFrequencyEngine: 0.55495495
+      lowpassExpand: 0
+      lowpassEnabled: 0
+      lowpassFrequencyEditor: 20000
+      lowpassFrequencyEngine: 1
       lowpassAmountEditor: 6
       lowpassAmountEngine: 1
       lowpassDistanceEnable: 0
@@ -650,7 +650,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     audioClips:
-    - {fileID: 8300000, guid: 234bbc83fcf9be74bab144e3738c3aeb, type: 3}
+    - {fileID: 8300000, guid: 7ad30bfa3040bcd4793fa6cbfefdb765, type: 3}
     notes: Notes
   assetGuid: 
   assetGuidHash: 0
