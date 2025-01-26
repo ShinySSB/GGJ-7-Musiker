@@ -15,7 +15,7 @@ MonoBehaviour:
   internals:
     data:
       foundReferences: []
-      previewAudioMixerGroup: {fileID: -8917451982255763891, guid: 731a8227e9267394686f82f3cb6e3be9, type: 2}
+      previewAudioMixerGroup: {fileID: -1045835971392157012, guid: 731a8227e9267394686f82f3cb6e3be9, type: 2}
       expandPreview: 1
       expandAudioClips: 1
       previewCurves: 1
@@ -47,8 +47,8 @@ MonoBehaviour:
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
       volumeExpand: 1
-      volumeDecibel: -11.1
-      volumeRatio: 0.2786121
+      volumeDecibel: -7.8
+      volumeRatio: 0.40738025
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
       volumeDistanceRolloff: -2

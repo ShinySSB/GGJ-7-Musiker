@@ -46,9 +46,9 @@ MonoBehaviour:
       bypassListenerEffects: 0
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
-      volumeExpand: 0
-      volumeDecibel: 0
-      volumeRatio: 1
+      volumeExpand: 1
+      volumeDecibel: -4.6
+      volumeRatio: 0.58884364
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
       volumeDistanceRolloff: -2

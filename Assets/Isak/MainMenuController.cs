@@ -8,13 +8,13 @@ using UnityEngine.Events;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Audio;
 using Slider = UnityEngine.UI.Slider;
 
 
 public class MainMenuController : MonoBehaviour
 {
-
-
+    
 
     public UnityEvent gameStart, levelSelect, settings, back;
     [Space(10)]
