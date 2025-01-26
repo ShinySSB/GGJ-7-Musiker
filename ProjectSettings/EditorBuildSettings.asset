@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 29a39964cd99e40489754437142a06b7
   - enabled: 1
     path: Assets/Scenes/Robin testscenes/Test Scene Robbing.unity
     guid: 415a9a251917d8048907ae5d121ce192
   - enabled: 1
-    path: Assets/Scenes/Lily.unity
-    guid: 461c8285245e83d4d9642954394250e9
+    path: Assets/Scenes/Level2.unity
+    guid: 922706bf5ca7f9a43a190896b3119992
   m_configObjects: {}
