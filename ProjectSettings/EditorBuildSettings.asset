@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 29a39964cd99e40489754437142a06b7
   - enabled: 1
-    path: Assets/Scenes/Robin testscenes/Test Scene Robbing.unity
+    path: Assets/Scenes/LinusTest/Robin testscenes/Test Scene Robbing.unity
     guid: 415a9a251917d8048907ae5d121ce192
   - enabled: 1
     path: Assets/Scenes/Level2.unity
