@@ -5,11 +5,14 @@ using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D Rigidbody2D;
+
+    public UnityEvent OnGrow, OnShrink;
     
     [Header("Character Controlls")]
     
@@ -71,11 +74,13 @@ public class PlayerMovement : MonoBehaviour
         {
             //Go up
             Rigidbody2D.gravityScale -= (Time.deltaTime * timeToGrow);
+            OnGrow.Invoke();
         }
         else if (inputY == -1 && Rigidbody2D.gravityScale <= maxGravity)
         {
             //Go down
             Rigidbody2D.gravityScale += (Time.deltaTime * timeToShrink);
+            OnShrink.Invoke();
         }
     }
 
