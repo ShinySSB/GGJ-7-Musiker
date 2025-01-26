@@ -98,7 +98,6 @@ public class PlayerMovement : MonoBehaviour
         {
             t += Time.deltaTime/ changeDuration;
             t = Mathf.Clamp(t, minSize, maxSize - 1);
-            Debug.Log(t);
             Vector3 newScale = Vector3.Lerp(startScale, targetScale, t);
             transform.localScale = newScale;
         }
@@ -106,7 +105,6 @@ public class PlayerMovement : MonoBehaviour
         {
             t -= Time.deltaTime * 10 / changeDuration;
             t = Mathf.Clamp(t, minSize, maxSize - 1);
-            Debug.Log(t);
             Vector3 newScale = Vector3.Lerp(startScale, targetScale, t);
             transform.localScale = newScale;
         }
