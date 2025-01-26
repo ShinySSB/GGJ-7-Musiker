@@ -644,6 +644,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &62123534 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2696428307761165969, guid: b4a49a0cd53fa2d4a82df2c515433b01, type: 3}
+  m_PrefabInstance: {fileID: 969176787}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ed341a10191024d81c9d87a03f6f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &106618049
 GameObject:
   m_ObjectHideFlags: 0
@@ -13801,6 +13812,14 @@ PrefabInstance:
     - target: {fileID: 3106085369748126337, guid: b8321b13c58f1cc479448d04a987e8e8, type: 3}
       propertyPath: m_Name
       value: HelpMeGuy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601940042670982686, guid: b8321b13c58f1cc479448d04a987e8e8, type: 3}
+      propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 62123534}
+    - target: {fileID: 3601940042670982686, guid: b8321b13c58f1cc479448d04a987e8e8, type: 3}
+      propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6406011712786774086, guid: b8321b13c58f1cc479448d04a987e8e8, type: 3}
       propertyPath: m_LocalPosition.x
