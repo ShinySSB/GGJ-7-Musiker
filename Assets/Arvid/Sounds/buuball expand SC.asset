@@ -15,7 +15,7 @@ MonoBehaviour:
   internals:
     data:
       foundReferences: []
-      previewAudioMixerGroup: {fileID: 0}
+      previewAudioMixerGroup: {fileID: -1045835971392157012, guid: 731a8227e9267394686f82f3cb6e3be9, type: 2}
       expandPreview: 0
       expandAudioClips: 1
       previewCurves: 1
@@ -47,8 +47,8 @@ MonoBehaviour:
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
       volumeExpand: 1
-      volumeDecibel: 0
-      volumeRatio: 1
+      volumeDecibel: -8.9
+      volumeRatio: 0.35892195
       volumeRandomEnable: 1
       volumeRandomRangeDecibel: -0.4
       volumeDistanceRolloff: -2
@@ -257,9 +257,9 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      spatialSpreadExpand: 0
-      spatialSpreadDegrees: 180
-      spatialSpreadRatio: 0.5
+      spatialSpreadExpand: 1
+      spatialSpreadDegrees: 0
+      spatialSpreadRatio: 0
       spatialSpreadDistanceRolloff: -4
       spatialSpreadDistanceCurve:
         serializedVersion: 2
@@ -312,7 +312,7 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      stereoPanExpand: 0
+      stereoPanExpand: 1
       stereoPanOffset: 0
       stereoPanAngleUse: 0
       stereoPanAngleAmount: 0.75

@@ -87,7 +87,6 @@ public class PlayerMovement : MonoBehaviour
         {
             //Go down
             Rigidbody2D.gravityScale += (Time.deltaTime * timeToShrink);
-            OnShrink.Invoke();
         }
     }
 
