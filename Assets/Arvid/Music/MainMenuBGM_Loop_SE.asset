@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b80e83c0feb1444db6d74f0748b6ec9, type: 3}
-  m_Name: LevelBGM_Loop_SE
+  m_Name: MainMenuBGM_Loop_SE
   m_EditorClassIdentifier: 
   internals:
     notes: Notes
     data:
-      previewAudioMixerGroup: {fileID: 0}
+      previewAudioMixerGroup: {fileID: -6159010822118239673, guid: 731a8227e9267394686f82f3cb6e3be9, type: 2}
       expandSoundContainers: 1
       expandTimeline: 1
-      expandPreview: 0
-      expandAllSoundTag: 1
+      expandPreview: 1
+      expandAllSoundTag: 0
       timelineSoundContainerData:
       - delay: 0
         volumeRatio: 1
@@ -58,7 +58,7 @@ MonoBehaviour:
         distanceScale: 1
         distortionIncrease: 0
         fadeInLength: 0.4
-        fadeInShape: -12.4
+        fadeInShape: 2
         fadeOutLength: 0.4
         fadeOutShape: -2
         followPosition: 1
@@ -135,7 +135,7 @@ MonoBehaviour:
       intensityDebugResolution: 100
       intensityDebugZoom: 0.9
       intensityDebugValueList: []
-      triggerOnExpand: 1
+      triggerOnExpand: 0
       triggerOnPlayEnable: 0
       triggerOnPlaySoundEvents:
       - {fileID: 0}
@@ -246,6 +246,6 @@ MonoBehaviour:
         soundEvent:
         - {fileID: 0}
     soundContainers:
-    - {fileID: 11400000, guid: f472188a4c97ace4f81d19f39a1b7d3f, type: 2}
+    - {fileID: 11400000, guid: a284d9fba09d43f45988968a0d126907, type: 2}
   assetGuid: 
   assetGuidHash: 0

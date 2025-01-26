@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e444e5f947e2a7409a1eaa10f9fa16e, type: 3}
-  m_Name: LevelBGM_Loop_SC
+  m_Name: BGM_Levels_Loop_SC
   m_EditorClassIdentifier: 
   internals:
     data:
       foundReferences: []
-      previewAudioMixerGroup: {fileID: 0}
-      expandPreview: 0
+      previewAudioMixerGroup: {fileID: -6159010822118239673, guid: 731a8227e9267394686f82f3cb6e3be9, type: 2}
+      expandPreview: 1
       expandAudioClips: 1
       previewCurves: 1
       audioMixerGroup: {fileID: 0}
       settingsExpandBase: 1
-      settingsExpandAdvanced: 0
+      settingsExpandAdvanced: 1
       priority: 1
-      distanceEnabled: 1
+      distanceEnabled: 0
       distanceScale: 100
       preventEndClicks: 1
       loopEnabled: 1
-      followPosition: 0
+      followPosition: 1
       stopIfTransformIsNull: 1
       randomStartPosition: 0
       randomStartPositionMin: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
       lockAxisEnable: 0
       lockAxis: 2
       lockAxisPosition: 0
-      playOrder: 1
+      playOrder: 0
       dopplerAmount: 0
       bypassReverbZones: 0
       bypassVoiceEffects: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      pitchExpand: 1
+      pitchExpand: 0
       pitchSemitone: 0
       pitchRatio: 1
       pitchRandomEnable: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      spatialBlendExpand: 1
+      spatialBlendExpand: 0
       spatialBlend: 0
       spatialBlendDistanceRolloff: -4
       spatialBlendDistance3DIncrease: 0.5
@@ -257,9 +257,9 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      spatialSpreadExpand: 1
-      spatialSpreadDegrees: 0
-      spatialSpreadRatio: 0
+      spatialSpreadExpand: 0
+      spatialSpreadDegrees: 180
+      spatialSpreadRatio: 0.5
       spatialSpreadDistanceRolloff: -4
       spatialSpreadDistanceCurve:
         serializedVersion: 2
@@ -312,14 +312,14 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      stereoPanExpand: 1
+      stereoPanExpand: 0
       stereoPanOffset: 0
       stereoPanAngleUse: 0
       stereoPanAngleAmount: 0.75
       stereoPanAngleRolloff: -2
       reverbZoneMixExpand: 0
-      reverbZoneMixDecibel: -Infinity
-      reverbZoneMixRatio: 0
+      reverbZoneMixDecibel: 0
+      reverbZoneMixRatio: 1
       reverbZoneMixDistanceIncrease: 0.5
       reverbZoneMixDistanceRolloff: -2
       reverbZoneMixDistanceCurve:
@@ -375,7 +375,7 @@ MonoBehaviour:
         m_RotationOrder: 4
       distortionExpand: 0
       distortionEnabled: 0
-      distortionAmount: 0.483
+      distortionAmount: 0.25
       distortionDistanceEnable: 0
       distortionDistanceRolloff: -4
       distortionDistanceCurve:
@@ -433,8 +433,8 @@ MonoBehaviour:
       lowpassEnabled: 0
       lowpassFrequencyEditor: 20000
       lowpassFrequencyEngine: 1
-      lowpassAmountEditor: 5.98
-      lowpassAmountEngine: 0.99666667
+      lowpassAmountEditor: 6
+      lowpassAmountEngine: 1
       lowpassDistanceEnable: 0
       lowpassDistanceFrequencyRolloff: -2
       lowpassDistanceFrequencyCurve:
@@ -650,7 +650,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     audioClips:
-    - {fileID: 8300000, guid: c3ad41a1aa623fa4a8499f0c1e63d2f4, type: 3}
+    - {fileID: 8300000, guid: 78f7b5aaeb518b64e91b1754770e5a3b, type: 3}
     notes: Notes
   assetGuid: 
   assetGuidHash: 0
