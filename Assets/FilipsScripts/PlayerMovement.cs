@@ -47,6 +47,14 @@ public class PlayerMovement : MonoBehaviour
         t = 0;
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.W))
+            OnGrow.Invoke();
+        else if (Input.GetKeyDown(KeyCode.S))
+            OnShrink.Invoke();
+    }
+
     void FixedUpdate()
     {
         DoSidewaysMovement();
@@ -74,7 +82,6 @@ public class PlayerMovement : MonoBehaviour
         {
             //Go up
             Rigidbody2D.gravityScale -= (Time.deltaTime * timeToGrow);
-            OnGrow.Invoke();
         }
         else if (inputY == -1 && Rigidbody2D.gravityScale <= maxGravity)
         {

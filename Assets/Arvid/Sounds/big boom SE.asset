@@ -60,7 +60,7 @@ MonoBehaviour:
         fadeInLength: 0
         fadeInShape: 2
         fadeOutLength: 0
-        fadeOutShape: -2
+        fadeOutShape: -5
         followPosition: 1
         bypassReverbZones: 0
         bypassVoiceEffects: 0
