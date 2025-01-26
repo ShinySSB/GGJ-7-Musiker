@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class NextSceneManager : MonoBehaviour
 {
-    //public GameObject LoadingScreen;
+    public GameObject LoadingScreen;
     public Slider LoadingBar;
     public TMP_Text LoadingText;
 
@@ -19,7 +19,7 @@ public class NextSceneManager : MonoBehaviour
     IEnumerator LoadSceneIE(int sceneIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
-        //LoadingScreen.SetActive(true);
+        LoadingScreen.SetActive(true);
 
         while (!operation.isDone)
         {
